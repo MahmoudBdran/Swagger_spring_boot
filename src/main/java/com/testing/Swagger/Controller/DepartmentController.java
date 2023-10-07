@@ -25,5 +25,8 @@ public class DepartmentController {
     @PostMapping("/add")
     public Department InsertDepartment (@RequestBody Department department){
         return departmentService.InsertDepartment(department);
+    }@GetMapping("/hello")
+    public String sayHello(){
+        return "Hello";
     }
 }
