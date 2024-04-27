@@ -11,9 +11,9 @@ public class MainController {
     public String index() {
         return "Hurraaaaaay!! it is working";
     }
+
     @GetMapping("/testTheTekton")
     public String testTheTekton() {
         return "Hurraaaaaay!! test page";
     }
-
 }
