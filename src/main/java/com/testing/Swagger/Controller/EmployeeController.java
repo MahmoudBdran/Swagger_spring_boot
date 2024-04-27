@@ -18,6 +18,10 @@ public class EmployeeController {
     public List<Employee> getAllEmployees(){
         return employeeService.getAllEmployees();
     }
+    @GetMapping("/helloWorldEmps")
+    public String sayHelloWorldEmps(){
+        return "Hello world my Employees";
+    }
     @GetMapping("/{id}")
     public Optional<Employee> getEmployeeById(@PathVariable Long id){
         return employeeService.getEmployeeById(id);
